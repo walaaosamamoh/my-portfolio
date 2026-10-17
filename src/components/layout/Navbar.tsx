@@ -6,12 +6,12 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
-    { label: "Experience", href: "#experience" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Skills", href: "/#skills" },
+    { label: "Projects", href: "/#projects" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   useEffect(() => {
@@ -44,7 +44,8 @@ export default function Navbar() {
           onClick={() => handleNavClick("#home")}
           className="text-xl font-bold tracking-tight"
         >
-          &lt;Walaa/&gt;
+          <span className="text-primary">&lt;</span>Walaa
+          <span className="text-primary"> {"  "}/&gt;</span>
         </a>
 
         {/* Desktop navigation */}
@@ -53,19 +54,33 @@ export default function Navbar() {
             const isActive = activeSection === link.href.slice(1);
 
             return (
-              <a
-                href={link.href}
-                key={link.href}
-                onClick={() => handleNavClick(link.href)}
-                aria-current={isActive ? "location" : undefined}
-                className={`border-b-2 py-2 text-sm font-medium transition ${
-                  isActive
-                    ? "border-primary text-text"
-                    : "border-transparent text-text-secondary hover:border-primary hover:text-text"
-                }`}
-              >
-                {link.label}
-              </a>
+              <>
+                {link.label === "Contact" ? (
+                  <a
+                    href={link.href}
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    aria-current={isActive ? "location" : undefined}
+                    className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white transition hover:bg-primary-hover"
+                  >
+                    Get In Touch
+                  </a>
+                ) : (
+                  <a
+                    href={link.href}
+                    key={link.href}
+                    onClick={() => handleNavClick(link.href)}
+                    aria-current={isActive ? "location" : undefined}
+                    className={`border-b-2 py-2 text-sm font-medium transition ${
+                      isActive
+                        ? "border-primary text-text"
+                        : "border-transparent text-text-secondary hover:border-primary hover:text-text"
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                )}
+              </>
             );
           })}
         </div>
