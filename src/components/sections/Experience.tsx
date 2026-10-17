@@ -41,7 +41,7 @@ export default function Experience() {
                 className="relative pl-8 sm:pl-12"
               >
                 {/* Timeline marker */}
-                <div className="absolute left-0 top-1.5 flex size-3.75 items-center justify-center rounded-full border-2 border-primary bg-background sm:size-[19px]">
+                <div className="absolute left-0 top-1.5 flex size-3.75 items-center justify-center rounded-full border-2 border-primary bg-background sm:size-4.75">
                   <div className="size-1.5 rounded-full bg-primary" />
                 </div>
 
