@@ -47,7 +47,7 @@ export default function About() {
               Get to know me
             </p>
 
-            <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight text-text sm:text-4xl lg:text-5xl">
               About Me
             </h2>
 
