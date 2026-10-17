@@ -10,6 +10,8 @@ export const skillGroups = [
       "React",
       "Vue",
       "Tailwind CSS",
+      "React Router",
+      "Vue Router",
     ],
   },
   {
@@ -18,17 +20,18 @@ export const skillGroups = [
     skills: [
       "Pinia",
       "Zustand",
+      "TanStack Query",
+      "TanStack Form",
+      "Zod",
       "Axios",
       "REST APIs",
       "GraphQL",
-      "Apollo Server",
-      "JSON",
     ],
   },
   {
     title: "Tools & Workflow",
     description: "Tools I use throughout the development process.",
-    skills: ["Git", "GitHub", "npm", "VS Code", "Postman"],
+    skills: ["Git", "GitHub", "Vite", "Vercel", "VS Code", "Postman"],
   },
   {
     title: "Development Practices",
