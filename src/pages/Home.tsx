@@ -1,3 +1,4 @@
+import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import About from "../components/sections/About";
 import Contact from "../components/sections/Contact";
@@ -5,10 +6,12 @@ import Experience from "../components/sections/Experience";
 import Hero from "../components/sections/Hero";
 import Projects from "../components/sections/Projects";
 import Skills from "../components/sections/Skills";
+import ScrollManager from "../components/ui/ScrollManager";
 
 export default function Home() {
   return (
     <div className="bg-background w-full min-h-screen mt-0">
+      <ScrollManager/>
       <Navbar />
       <Hero />
       <About />
@@ -16,6 +19,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Contact />
+      <Footer />
     </div>
   );
 }
