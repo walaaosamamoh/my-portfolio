@@ -26,6 +26,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary)  #0b0f14;;
 }
 
 body {
