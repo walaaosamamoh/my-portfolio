@@ -10,37 +10,16 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
-    role: "Front-End Developer Trainee",
-    company: "Systech Digital",
-    period: "June 2026 – August 2026",
-    type: "Training",
-    description:
-      "Completed practical front-end development training, building projects and collaborating in a development environment.",
-    responsibilities: [
-      "Developed web applications using Vue.js and the Composition API.",
-      "Practiced Git and GitHub workflows and team collaboration.",
-      "Started working with React and TypeScript and deployed projects using Vercel.",
-    ],
-    technologies: [
-      "Vue.js",
-      "JavaScript",
-      "Git",
-      "GitHub",
-      "React",
-      "TypeScript",
-    ],
-  },
-  {
     role: "Freelance Front-End Developer",
     company: "Freelance",
     period: "March 2025 – Present",
     type: "Freelance",
     description:
-      "Building responsive web interfaces and interactive applications based on project requirements.",
+      "Developing responsive websites and web applications, with a focus on reusable components, API integration, and reliable deployment.",
     responsibilities: [
-      "Developed responsive interfaces using Vue.js, JavaScript, Tailwind CSS, HTML, and CSS.",
-      "Integrated REST APIs and managed application state using Pinia and Axios.",
-      "Worked with deployment workflows using Vercel and cPanel/FTP.",
+      "Build responsive user interfaces using Vue.js, JavaScript, Tailwind CSS, HTML, and CSS.",
+      "Integrate REST APIs using Axios and manage shared application state with Pinia.",
+      "Deploy web projects using Vercel and cPanel/FTP workflows.",
     ],
     technologies: [
       "Vue.js",
@@ -49,6 +28,30 @@ export const experiences: ExperienceItem[] = [
       "Pinia",
       "Axios",
       "REST APIs",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    role: "Front-End Developer Trainee",
+    company: "Systech Digital",
+    period: "June 2026 – August 2026",
+    type: "Training",
+    description:
+      "Completed practical front-end development training by building web projects, practicing collaborative workflows, and expanding into React and TypeScript.",
+    responsibilities: [
+      "Built web projects using Vue.js and the Composition API, including e-commerce and social media interfaces.",
+      "Practiced version control and team collaboration using Git and GitHub.",
+      "Gained initial hands-on experience with React and TypeScript and deployed projects using Vercel.",
+    ],
+    technologies: [
+      "Vue.js",
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Git",
+      "GitHub",
+      "Vercel",
     ],
   },
   {
@@ -57,18 +60,12 @@ export const experiences: ExperienceItem[] = [
     period: "September 2022 – March 2023",
     type: "Internship",
     description:
-      "Contributed to front-end website development, translating designs into responsive and reusable interfaces.",
+      "Contributed to website development by translating design mockups into responsive interfaces and supporting front-end implementation.",
     responsibilities: [
-      "Translated Figma designs into responsive web interfaces using HTML, CSS, Flexbox, Grid, and JavaScript.",
+      "Translated Figma designs into responsive web pages using HTML, CSS, Flexbox, Grid, and JavaScript.",
       "Used Git for version control and collaborated with team members through code reviews.",
-      "Assisted with WordPress customization, cross-browser testing, and basic SEO practices.",
+      "Supported WordPress customization, cross-browser testing, and basic SEO improvements.",
     ],
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Git",
-      "WordPress",
-    ],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Figma", "Git", "WordPress"],
   },
 ];
