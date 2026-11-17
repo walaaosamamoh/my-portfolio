@@ -2,6 +2,7 @@ import nexaLearnImage from "../assets/projects/nexalearn-vqud.vercel.app_.png";
 import kokiStoreImage from "../assets/projects/koki-store-gamma.vercel.app_.png";
 import rayoCarsImage from "../assets/projects/raio-cars.vercel.app_.png";
 import instaImage from "../assets/projects/insta.png";
+import olivaTableImage from "../assets/projects/oliva-table.png";
 
 export interface Project {
   slug: string;
@@ -18,6 +19,52 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    slug: "oliva-table",
+    title: "Oliva Table",
+    category: "React",
+    description:
+      "A bilingual Mediterranean restaurant website with an online ordering system, delivery and pickup options, and guest order tracking.",
+    longDescription: [
+      "Oliva Table is a full-stack restaurant web application built with React and TypeScript. It provides a bilingual experience in English and Arabic, with RTL support, allowing customers to explore the menu, browse dishes by category, and view detailed dish information.",
+      "The application includes a shopping cart and checkout flow where customers can choose delivery or pickup and place orders with cash payment. Orders, menu items, and categories are managed through Supabase, with database-side order validation and automatic price calculation.",
+      "I implemented guest order tracking using an order number and phone verification, allowing customers to follow their order status without creating an account. TanStack Query handles server data, Zustand manages cart state, and react-i18next provides multilingual support.",
+      "This project strengthened my experience with database integration, secure backend operations, state management, API communication, and building a complete customer-facing ordering workflow.",
+    ],
+    image: olivaTableImage,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "TanStack Query",
+      "Zustand",
+      "React Router",
+      "React i18next",
+    ],
+    features: [
+      "Browse restaurant menu and dish details",
+      "Search and filter dishes by category",
+      "Bilingual English and Arabic interface with RTL support",
+      "Shopping cart with persistent state",
+      "Checkout with delivery and pickup options",
+      "Order creation and storage in Supabase",
+      "Guest order tracking with order number and phone verification",
+      "Visual order status progress",
+      "Responsive design for mobile, tablet, and desktop",
+    ],
+    challenges: [
+      "Integrating Supabase with the React frontend",
+      "Designing secure database access using Row Level Security and database functions",
+      "Validating orders and calculating prices on the database side",
+      "Implementing guest order tracking with phone verification",
+      "Managing shared cart state and server data",
+      "Supporting English and Arabic layouts with RTL direction",
+    ],
+    githubUrl: "https://github.com/walaaosamamoh/oliva-table",
+    liveUrl: "https://oliva-table.vercel.app/",
+  },
   {
     slug: "nexalearn",
     title: "NexaLearn",
